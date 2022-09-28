@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <ul>
+            <% if (mygroup.length == 0) { %>
+                <li>Not valid</li>
+            <% } else { %>
+                <% for(const student of mygroup) { %>
+                    <li> <%= student.name %></li>
+                <% } %>
+            <% } %>
+        </ul>
+    </body>
+</html>
